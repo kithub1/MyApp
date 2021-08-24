@@ -1,4 +1,4 @@
-package com.myapp.domain.user.model;
+package com.example.domain.user.model;
 
 import java.util.Date;
 

@@ -3,7 +3,7 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- Mapperとxmlのマッピング -->
-<mapper namespace="com.myapp.repository.UserMapper">
+<mapper namespace="com.example.repository.UserMapper">
 
 	<!-- ユーザー1件登録 -->
 	<insert id="insertOne">
@@ -35,5 +35,14 @@
 		)
 
 	</insert>
+
+	<select id="findMany" resultType="MUser">
+
+		SELECT
+		*
+		FROM
+		m_user
+
+	</select>
 
 </mapper>

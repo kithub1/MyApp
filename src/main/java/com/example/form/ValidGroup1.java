@@ -1,4 +1,4 @@
-package com.myapp.form;
+package com.example.form;
 
 public interface ValidGroup1 {
 

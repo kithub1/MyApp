@@ -1,4 +1,4 @@
-package com.myapp.form;
+package com.example.form;
 
 import javax.validation.GroupSequence;
 
