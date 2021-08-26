@@ -20,12 +20,11 @@ public class UserServiceImpl implements UserService {
 		user.setDepartmentId(1); //部署
 		user.setRole("ROLE_GENELAL"); //ロール
 		mapper.insertOne(user);
-
 	}
 
 	@Override
-	public List<MUser> getUsers() {
-		return mapper.findMany();
+	public List<MUser> getUsers(MUser user) {
+		return mapper.findMany(user);
 	}
 
 	@Override

@@ -10,7 +10,7 @@ public interface UserService {
 	public void signup(MUser user);
 
 	//ユーザー全件取得
-	public List<MUser> getUsers();
+	public List<MUser> getUsers(MUser user);
 
 	//ユーザー1件取得
 	public MUser getUserOne(String userId);
