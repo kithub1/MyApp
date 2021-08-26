@@ -34,6 +34,8 @@ public class UserDetailController {
 
 		//MUserをformに変換
 		form = modelMapper.map(user, UserDetailForm.class);
+		form.setSalaryList(user.getSalaryList());
+
 		model.addAttribute("userDetailForm", form);
 
 		//ユーザー詳細画面を表示
