@@ -50,9 +50,9 @@ public class SignupController {
 
 	//ユーザー登録処理
 	@PostMapping("/signup")
-	public String postSignup(Model model,
-			@ModelAttribute @Validated(GroupOrder.class) SignupForm form,
-			BindingResult bindingResult) {
+	public String postSignup(@ModelAttribute @Validated(GroupOrder.class) SignupForm form,
+			BindingResult bindingResult,
+			Model model) {
 
 		//入力チェック
 		if (bindingResult.hasErrors()) {

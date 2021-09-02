@@ -113,7 +113,8 @@
 		LEFT JOIN
 		t_salary
 		ON
-		m_user.user_id =t_salary.user_id
+		m_user.user_id
+		=t_salary.user_id
 		WHERE
 		m_user.user_id
 		= #{userId};
@@ -142,5 +143,16 @@
 		user_id = #{userId}
 
 	</delete>
+
+	<select id="findLoginUser" resultType="MUser">
+
+		SELECT
+		*
+		FROM
+		m_user
+		WHERE
+		user_id = #{userId}
+
+	</select>
 
 </mapper>
